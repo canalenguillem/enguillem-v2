@@ -625,3 +625,60 @@ pre:hover .copy-btn { opacity: 1; }
 .lc-module h4 small { font-weight: 400; color: var(--text-muted); font-size: 0.8rem; }
 .lc-module p { font-size: 0.82rem; margin: 0; color: var(--text-muted); }
 .lc-wrap h2 { font-family: var(--font-sans); font-size: 1.7rem; font-weight: 800; margin-bottom: 18px; }
+
+/* ===== TOC PLUGIN OVERRIDE (Table of Contents Plus / Easy TOC) ===== */
+#toc_container,
+.ez-toc-container,
+.ez-toc-widget-container,
+div.ez-toc-v2_0_37 {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    padding: 16px 20px !important;
+    box-shadow: none !important;
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+#toc_container .toc_title,
+.ez-toc-title,
+.ez-toc-title-container {
+    color: var(--text) !important;
+    font-family: var(--font-mono) !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    border-bottom: 1px solid var(--border) !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 10px !important;
+}
+
+#toc_container ul,
+#toc_container ol,
+.ez-toc-list {
+    background: transparent !important;
+    padding-left: 16px !important;
+}
+
+#toc_container ul li a,
+#toc_container ol li a,
+.ez-toc-list li a {
+    color: var(--text-muted) !important;
+    text-decoration: none !important;
+    font-size: 0.85rem !important;
+    line-height: 1.9 !important;
+    transition: color var(--transition) !important;
+}
+
+#toc_container ul li a:hover,
+#toc_container ol li a:hover,
+.ez-toc-list li a:hover {
+    color: var(--accent) !important;
+}
+
+/* hide/show toggle */
+#toc_container .toc_toggle,
+.ez-toc-toggle {
+    color: var(--text-muted) !important;
+    font-size: 0.75rem !important;
+}
